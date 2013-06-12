@@ -1,0 +1,443 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Scroller Theme - Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection">
+</head>
+
+
+<body>
+<div id="container">
+
+<div class="container-left">
+		<ol>
+			<li><a href="#container">Theme Overview</a></li>
+			<li><a href="#install">Theme Installation </a></li>
+			<li><a href="#setup">Default Setup</a></li>
+			<li><a href="#homesetup">Homepage Setup</a>
+            
+            	<ul>
+                <li><a href="#home-slider">Homepage Slider</a>
+                <li><a href="#home-section">Homepage Sections</a>
+                <li><a href="#home-content">Homepage Content & Shortcodes</a>
+                <li><a href="#home-menu">Homepage 'Scroll' Menu</a>
+                </ul>
+            
+            </li>
+			<li><a href="#themesetup">Admin panel</a></li>
+			<li><a href="#templates">Custom Templates</a></li>
+            <li><a href="#widgets">Custom Widgets</a></li>
+			<li><a href="#images">Images</a></li>
+
+			<li><a href="#formats">Post Formats</a></li>
+			<li><a href="#shortcodes">Shortcodes</a></li>
+			<li><a href="#custom-menu">Theme Icons</a></li>
+			<li><a href="#fonts">Adding New Fonts</a></li>
+			<li><a href="#plugins">Plugins</a></li>
+		    <li><a href="#translation">Translation</a></li>
+		</ol>
+</div>
+
+
+<div id="toc" class="container-right">	
+		<h1  class="left">Scroller</h1>
+		<h2 class="right">Theme  Documentation</h2>
+		
+
+		<div style="clear:both"></div>
+		<hr>
+
+		<p class="left prepend-top">
+					Created:31.05.2013<br>
+					By: <a href="http://themnific.com">Dannci &amp; Themnific</a><br>					
+		</p> 
+
+		<p class="right prepend-top">
+					Support: <a href="http://themeforest.net/user/Dannci">Dannci's Profile Page</a><br>
+					Web: <a href="http://themnific.com">www.themnific.com</a>			
+		</p> 
+		
+		<div style="clear:both"></div>
+		<hr>
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<h3 class="alt">Hello there...</h3>
+
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to contact me via Profile page. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		
+		
+		
+<h3 id="htmlStructure">&nbsp;</h3>
+<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<h3 id="cssFiles">&nbsp;</h3>
+<h3 id="install">Theme Instalation  - <a href="#toc">top</a></h3>
+		
+	<h6>Installation via WP Dashboard:</h6>
+<ol>
+				<li>Unzip the Main downloaded file,</li>
+				<li>Go to Appearance &gt;Themes,</li>
+			    <li>In Install theme tab, choose &quot;Upload&quot;,</li>
+			    <li>Then find scroller.zip file on your computer and press Install Now,</li>
+			    <li>After that activate theme,</li>
+			    <li>Go to  Scroller Theme Options and setup theme.</li>
+    </ol>
+<p>&nbsp;</p>
+<h6>Installation via FTP:</h6>
+<ol>
+  <li>Unzip the Main downloaded file,</li>
+  <li>Upload scroller folder  into Themes folder in your WordPress installation (/wp-content/themes) via FTP,</li>
+  <li>Go to Appearance &gt;Themes, find Scroller theme and activate it,</li>
+  <li>Go to  Scroller Theme Options and setup theme.</li>
+</ol>
+<p><img src="images/00-dashboard.png"alt="img"></p>
+<p>&nbsp;</p>
+
+
+<h3 id="setup">Default Setup  - <a href="#toc">top</a>		</h3>
+<p>Right after the installation go to Scroller Admin panel</p>
+<p><img src="images/00-dashboard.png"alt="img"></p>
+<p> and hit &quot;Save All Changes&quot; button to set default style settings:</p>
+<p><img src="images/00-save.png"alt="img"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 id="homesetup">Homepage Setup  - <a href="#toc">top</a></h3>
+<p>&nbsp;</p>
+    <ol>
+		<li>In Pages section create new page called 'Home' and use for it Homepage template,</li>
+		<li>Important! <br/>
+        If you want to use Homepage with classic header use 'Homepage Scroll + Classic Header' template,<br/>
+        If you want to use Homepage without scroll effect use 'Homepage - No Scroll' template and use only 'Main Menu' location (in Menus section),<br/>
+	    <img src="images/hs-01.png" alt="img"></li>
+		<li>Go into Settings > Reading and set created Home page as Static page - Front page,</li>
+        <li>Note: If you want to create 'Blog' page create empty page (Default template) - name it Blog and in Settings > Reading set this page as Post page<br/>
+        <img src="images/hs-02.png" alt="img"></li>
+</ol>
+<h4 id="home-slider">Main Slider setup:</h4>
+		<ol>
+        <li>In Scroller admin panel, in Layout section choose type of slider<br/>
+        1. Slider with caption displays (as caption) only text entered into slide content,<br/>
+        2. Slider with content displays content as it is
+        </li>
+		<li>Create new Slider post (custom post) with title, add sometext and set featured image for this post,</li>
+		<li>If in Admin panel is selected Slider with content you can style inserted text - use native wp tools to set custom color, align text, add h1 - h4 headings etc.<br/>
+		  <img src="images/hs-03a.png" alt="img"></li><br/>
+          <img src="images/hs-03.png" alt="img"></li>
+        
+    </ol>
+<h4 id="home-section">Layout sections</h4>
+		<ol>
+        
+        
+		<li>Create new Layout post (homepage section) with 'Featured Works' title,<br/>
+        <img src="images/hs-04.png" alt="img"><br/>
+        <img src="images/hs-05.png" alt="img"></li>
+		<li>In 'Layout Options' tab enter unique 'Navigation Anchor' 'Navigation Anchor' fields are important for scroll menu. For this section we add 'portfolio' anchor</li>
+		<li>In 'Layout Options' select if section will be shown on small (mobile) screens.</li>
+		<li>In 'Layout Options' can be inserted aditional info - Section Intro - will be shown as text next to section title.</li>
+		<li>NOTE! If Section Intro field stays empty layout (section) title will be hidden. And you can add any content... </li>
+        
+</ol>
+
+<h4 id="home-content">Homepage Content & Shortcodes</h4>
+
+		<ol>
+        
+        <li>If you set featured image for layout section, this image will be as background (parallax effect). Use big images eg. 1920x1080px.</li>
+		<li>Into Layout section content can be added headings, texts, button, icons... and these elements can be styled using native wp tools (similar to content in slider)<br/>
+        <img src="images/hs-05a.png" alt="img"></li>
+		<li>Into Layout content can be inserted Layout shortcodes<br/>
+        <img src="images/hs-06.png" alt="img"></li>
+		<li>Before this needs to be created custom posts:<br/>
+        <img src="images/hs-06a.png" alt="img"><br/>
+        	<ol>
+        	<li>Portfolio Latest/Featured, Carousel Featured and Slider Featured shortcodes displays Portfolio posts, <br/>
+            NOTE: for featured shortcodes can be inserted more categories (Categories names should all be in lowercase and separated by commas)<br/>
+            <img src="images/hs-06b.png" alt="img"></li>
+            <li>Blog Lates shortcode displays classic Posts</li>
+            <li>Staff shortcode displays Staff Posts</li>
+            <li>Pricing tabs shortcodes displays Pricing Tabs Posts</li>
+            <li>Services shortcode displays Services Posts</li>
+            <li>Clients shortcode displays Clients Posts</li>
+            </ol>
+        </li>
+        
+</ol>
+
+
+
+<h4 id="home-menu">Scroll Menu for Layout sections:</h4>
+		<ol>
+        
+        <li>You need to create menu item for every Layout section. It is because of scroll effect. <br/>
+        Go to Appearance > Menus and create 'Scroll menu'<br/>
+        <img src="images/hs-08.png" alt="img"><br/>
+        select this menu for 'Scroll Menu' location and save it!<br/>
+        <img src="images/hs-09.png" alt="img"></li>
+		<li>Now using 'Custom Link' feature add new menu item with 'Portfolio' label and '#portfolio' link<br/>
+        <img src="images/hs-10.png" alt="img"><br/></li>
+        <li>Important ! For every layout section add New menu item! Use unique word from 'Navigation Anchor' field (<a href="#home-section">see Layout sections (step 2)</a>), and create menu item with '#+unique word' link<br/>
+        So if I create Services and Portfolio sections I will add these menu items:<br/>
+        
+        <img src="images/hs-11.png" alt="img"><br/>
+        Do not forget to create Home link (with #home) to scroll to the top.
+        </li>
+        
+        <li><strong>Add external link to scrolling menu:</strong><br/>
+        In Screen Options (top dropdown menu) enable CSS classes
+        <br/>
+        <img src="images/hs-12.png" alt="img">
+        <br/>
+        And now add your external link with 'external' word in CSS classes field
+        <img src="images/hs-13.png" alt="img">
+        </li> 
+
+</ol>
+
+
+<h3 id="themesetup">Theme Setup - Admin panel  - <a href="#toc">top</a>		</h3>
+<p><img src="images/00-dashboard.png"alt="img"></p>
+<p>Theme comes with extensive options panel with functions divided to these sections:</p>
+<p><img src="images/01-admin-menu.png" alt="img"></p>
+    <h6>General Settings:</h6>
+  <ol>
+<li>Upload your Main logo image - use bigger image (eg. 420x160px),</li>
+<li>Upload your Small logo image - using in scroll header and inpost/pages (eg. 200x40px),</li>
+				<li>Upload favicon,</li>
+				<li>Paste  Analytics Tracking Code.</li>
+  </ol>
+<p><img src="images/general.png"alt="img"></p>
+<h6>General Layout:</h6>
+<ol>
+  <li>Select type of slider</li>
+  <li>Add Portfolio  full URL,</li>
+  <li>Upload parallax image for Portfolio archives,</li>
+  <li>Add Blog full URL,</li>
+  <li>Upload parallax image for Blog page,</li>
+</ol>
+<p><img src="images/layout.png"alt="img"></p>
+<p>&nbsp;</p>
+<h6>Styling Options - Primary, Secondary  styling:</h6>
+		<ol>
+				<li>Choose Font family with color, style and width of the font,</li>
+				<li>Choose colors for typographic elements: body text/links, navigation BG and links, hovers etc.).</li>
+		</ol>
+	<p><img src="images/styling.png" alt="img"></p>
+<p>&nbsp;</p>
+<h6>Headings Typography:</h6>
+  <ol>
+  <li>Select Font-size for all headings (h1- h6),</li>
+  <li>Select Font-family for all headings (h1- h6),</li>
+  <li>Select font weight for all headings (h1- h6),</li>
+  <li>Select font color for all headings (h1- h6).</li>
+    </ol>
+<p><img src="images/typo.png" alt="img"></p>
+<p>&nbsp;</p>
+
+<h6>Social Networks Settings:</h6>
+        <ol>
+          <li>Enter the full URL of social network, your  profile or account.</li>
+        </ol>
+  <p></p>
+    <p><img src="images/social.png" alt="img"></p>
+        
+<h6>Custom Footer:</h6>
+        <ol>
+          <li>Enable left custom footer and enter some text.</li>
+          <li>Enable right custom footer and enter some text.</li>
+    </ol>
+<p></p>
+        <p><img src="images/footer.png" alt="img"></p>
+
+<p>&nbsp;</p>
+    <h2>If you are finished click on &quot;Save changes&quot; button!</h2>
+<h6>&nbsp;</h6>
+<p>&nbsp;</p>
+		<p>&nbsp;</p>
+  <h3 id="templates">Custom Templates - <a href="#toc">top</a></h3>
+
+  <h6>Custom Templates:</h6>
+	<ol>
+	    <li>Create a page by going to Page &gt; Add New.</li>
+			<li>In Attributes Section select custom page template (Full Width Page, Portfolio etc.)</li>
+			<li>Click the Publish button to publish your page.</li>
+	</ol>
+	<p>&nbsp;</p>
+	<h3 id="widgets">Custom Widgets - <a href="#toc">top</a></h3>
+
+    <p>Theme comes with few custom widgets (marked as -Themnific). Widgets are very easy to setup. Just follow and set partial widgets fields.</p>
+    <p><img src="images/widgets.png" alt="img"></p>
+    <p>&nbsp;</p>
+<h3 id="images">Images - <a href="#toc">top</a></h3>
+
+
+	<h6>Featured Images - Setup:</h6>
+
+    <ol>
+      <li>It is easy! Images  and thumbnails are generating automatically. To display thumbnails correctly upload images via WP interface,</li>
+      <li>then use <strong> &quot;Use as featured image&quot;</strong>
+      button to set featured image.</li>
+    </ol>
+    <p><img src="images/images-setup.png" alt="img"></p>
+    
+	<h6>Post Galleries - Setup:</h6>    
+    
+    <ol>
+      <li>Add more than one image into post gallery::<br/>
+          <img src="images/folio-03.png" alt="doc">
+      </li>
+      <li>After that insert this quicktag into post content:<br/>
+      <pre>[gallery link="file"]</pre></li>
+    </ol>
+
+
+<h3 id="formats">Post Formats  - <a href="#toc">top</a></h3>
+
+		<p>Theme comes with these posts formats:</p>
+		<p><img src="images/formats-01.png" alt="doc"></p>
+        
+     	<h6>Standard post</h6>   
+        <p>Default (native) WordPress post.</p>
+        
+     	<h6>Video post</h6>   
+        <p>Check 'Video' post in the Format tab and enter video embed code (iframe) into Video field:</p>
+        <p><img src="images/formats-video.png" alt="img"></p>
+        
+        
+     	<h6>Audio post</h6>   
+        <p>Check 'Audio' post in the Format tab and enter audio embed code (iframe) into Audio field:</p>
+        <p><img src="images/formats-audio.png" alt="img"></p>
+        
+        
+     	<h6>Gallery post</h6>   
+        <p>Check 'Gallery' post in the Format tab and enter more than one image into post gallery (see: <a href="#images">images section</a>)<br/>
+        The sideshow will be created automatically.</p>
+        
+     	<h6>Image post</h6>   
+        <p>Check 'Image' post in the Format tab and set featured image.</p>
+        
+   	<h6>Quote post</h6>   
+        <p>Check 'Quote' post in the Format tab and add some content. </p>
+        <p>Post content = Quote.</p>
+        <p>Post title = Author of the quote.</p> 
+        <p><img src="images/formats-quote.png" alt="img"></p>
+        
+
+     	<h6>Link post</h6>   
+        <p>Check 'Link' post in the Format tab and ads URL into Link field.</p>
+        <p><img src="images/formats-link.png" alt="img"></p>
+
+
+   
+<h3 id="shortcodes">Shortcodes Generator  - <a href="#toc">top</a></h3>
+		<p> Theme includes Custom Shortcodes that allow you to easily add buttons, boxes, social buttons, columns and more to your posts, pages and widgets.</p>
+
+		<p>Create shortcodes easily using shortcode generator:</p>
+		<p><img src="images/generator.png" alt="img"></p>
+
+
+     <p>&nbsp;</p>
+    <h3 id="custom-menu">Themme Icons :  - <a href="#toc">top</a></h3>
+     <p>&nbsp;</p>
+     <h6>Font Awesome - Integration</h6>
+    <p>Theme is integrated and with <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a> font. Due to marketplace licensing font files cannot be included in download package.</p>
+<p>1. Download <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome.</a></p>
+    <p>2. In downloaded file is 'font' folder with 4 font files (.eot, .svg, .ttf, .woff)</p>
+    <p><img alt="" src="images/fonts01.png"></p>
+    <p><img alt="" src="images/fonts02.png"></p>
+    <p>3. Upload all these font files into 'font' folder (located in main theme folder) on your server</p>
+    <p>4. And that is all! :)</p>
+     <p>&nbsp;</p>
+     <h6>Services Icons (like in demo)</h6>
+     <p>&nbsp;</p>
+<p>1. Before every service title add this piece of code    </p>
+<pre>&lt;i class=&quot;XXX&quot;&gt;&lt;/i&gt;</pre>
+      <p> <img alt="" src="images/custom-menu-01.png"></p>
+      <p>You can add icons before menu items too:
+    </p>
+      </p>
+      <p> <img alt="" src="images/custom-menu-02.png"></p>
+  <p>&nbsp;</p>
+  <p>5. For XXX you can set any icon name. You can find all icon names on <a href="http://fortawesome.github.com/Font-Awesome/#all-icons" target="_blank">Font Awesome homepage</a>.</p>
+ <p>6. You can see how-to video <a href="http://www.youtube.com/watch?v=-mxtT2Tw0VE" target="_blank">here</a>. It is not tutorial for my theme but the process is the same:</p>
+ <p><iframe width="560" height="315" src="http://www.youtube.com/embed/-mxtT2Tw0VE?rel=0" frameborder="0" allowfullscreen></iframe></p>
+ <p>7. If you are done, hit &quot;Save menu&quot; button!</p>
+<p>&nbsp;</p>
+
+    <h3 id="fonts">Adding New Fonts:  - <a href="#toc">top</a></h3>
+ <p>&nbsp;</p>
+     
+
+<p>- in admin-fonts.php (functions folder) add code necessary to font loading, eg. Roboto:900 use | to divide partial fonts.</p>
+<p>- then in 'admin-interface.php' file (functions folder) find 'Font Face' section</p>
+<p>- add your font (follow previous font lines).</p>
+<p>Three new lines in this file are necessary: </p>
+<pre>
+$font58.....  <br/>
+...<br/>
+if (strpos.....      <br/>
+...<br/>
+$output .= ' < option.....<br/>
+</pre>
+
+<p>Backup your files!</p>
+
+
+     <p>&nbsp;</p>
+    <h3 id="plugins">Plugins:  - <a href="#toc">top</a></h3>
+ <p>&nbsp;</p>
+     
+     <h6>Contact Form 7</h6>
+     <p>Theme is 'Contact Form 7' Plugin ready:  <a href="http://wordpress.org/plugins/contact-form-7/">Plugin Homepage</a></p>
+     <p>In search field (Plugins > Add New) insert 'Video Thumbnails' and Install this plugin</p>
+     <p>Plugin can be set its screen</p>
+     <p> <img alt="" src="images/plug03.png"></p>
+     <p>You can insert created 'contact' shortcode in every Layout section (in column too).</p>
+     
+
+<h3 id="translation">Translation  - <a href="#toc">top</a></h3>
+		<p> This theme is translation/localization ready and comes with <strong>vergo.po</strong> file. File is located in 'lang' folder.        </p>
+		<ol>
+      <li>Download <strong>poedit</strong> software <a href="http://www.poedit.net/download.php">here,</a></li>
+      <li>Install it and in this software translate vergo.po file (line by line) <a href="http://www.poedit.net/screenshots.php">screens</a>,</li>
+      <li>Once you have translated all the strings, you can save this as your .po file.
+        <p>The filename of your .po is crucial. Gettext uses the ISO 639   standard for language abbreviations and ISO 3166 for locales. If your   translation is written in American English for example, your file name   will look like en-US.po. Capitalization is also important here. For a full list of language and country codes, check out these two links:</p>
+        <ul>
+          <li><a href="http://www.gnu.org/software/gettext/manual/gettext.html#Language-Codes" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.gnu.org']);">Gettext language codes</a></li>
+          <li><a href="http://www.gnu.org/software/gettext/manual/gettext.html#Country-Codes" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.gnu.org']);">Gettext country codes</a></li>
+        </ul>
+        <p>Once   you save, POEdit by default automatically creates a .mo file alongside   your .po file. Put these files into 'lang' folder.</p>
+      </li>
+      <li>Access your <strong>wp-config.php</strong> file found in your WordPress' root folder. Your file should already contain <strong>define('WPLANG', '');</strong> but if it does not, you can add it in. You simply need to add your language and locale code into the define. If you were to translate your theme into German, you would have this:<br/>
+         <pre> define('WPLANG', 'de_DE');  </pre>
+          </li>
+    </ol>
+		<p>Your internationalization is complete!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+        
+
+<p>&nbsp;</p><p>&nbsp;</p>
+<hr/>
+		<p>Once again, thank you so much for purchasing this theme.</p>
+
+		
+	
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+  </div>
+</div>
+	<!-- end div .container -->
+</body>
+</html>
